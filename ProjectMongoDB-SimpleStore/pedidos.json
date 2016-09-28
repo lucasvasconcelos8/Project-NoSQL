@@ -1,0 +1,11 @@
+{"pedido_id" : "1", "data_pedido" : "2014-05-10T00:00:00Z", "data_entrega" : "2014-05-25T00:00:00Z", "cliente_cpf" : "06325348346"}
+{"pedido_id" : "2", "data_pedido" : "2014-05-10T00:00:00Z", "data_entrega" : "2014-05-26T00:00:00Z", "cliente_cpf" : "08213000213"}
+{"pedido_id" : "3", "data_pedido" : "2014-05-11T00:00:00Z", "data_entrega" : "2014-05-25T00:00:00Z", "cliente_cpf" : "08213000123"}
+{"pedido_id" : "4", "data_pedido" : "2014-05-11T00:00:00Z", "data_entrega" : "2014-05-28T00:00:00Z", "cliente_cpf" : "08213000123"}
+{"pedido_id" : "5", "data_pedido" : "2014-05-12T00:00:00Z", "data_entrega" : "2014-05-30T00:00:00Z", "cliente_cpf" : "18213012123"}
+{"pedido_id" : "6", "data_pedido" : "2014-05-12T00:00:00Z", "data_entrega" : "2014-05-29T00:00:00Z", "cliente_cpf" : "02156321123"}
+{"pedido_id" : "7", "data_pedido" : "2014-05-12T00:00:00Z", "data_entrega" : "2014-05-29T00:00:00Z", "cliente_cpf" : "02156321123"}
+{"pedido_id" : "8", "data_pedido" : "2014-05-12T00:00:00Z", "data_entrega" : "2014-05-29T00:00:00Z", "cliente_cpf" : "02156321123"}
+{"pedido_id" : "9", "data_pedido" : "2014-05-13T00:00:00Z", "data_entrega" : "2014-06-01T00:00:00Z", "cliente_cpf" : "12300023123"}
+{"pedido_id" : "10", "data_pedido" : "2014-05-15T00:00:00Z", "data_entrega" : "2014-06-02T00:00:00Z", "cliente_cpf" : "12300023123"}
+{"pedido_id" : "11", "data_pedido" : "2014-05-15T00:00:00Z", "data_entrega" : "2014-05-25T00:00:00Z", "cliente_cpf" : "06525447578"}

@@ -1,0 +1,7 @@
+{"endereco_id" : "1", "cep" : "60822690", "logradouro" : "Rua Professor Martins de Aguiar", "uf" : "CE", "cidade" : "Fortaleza", "cliente" : "06325348346"}
+{"endereco_id" : "2", "cep" : "60567690", "logradouro" : "Rua Canuto de Aguiar", "uf" : "CE", "cidade" : "Fortaleza", "cliente" : "08213000123"}
+{"endereco_id" : "3", "cep" : "70822725", "logradouro" : "Rua Chico Lemos", "uf" : "CE", "cidade" : "Fortaleza", "cliente" : "18213012123"}
+{"endereco_id" : "4", "cep" : "60921350", "logradouro" : "Avenida Paulista", "uf" : "SP", "cidade" : "Sao Paulo", "cliente" : "02156321123"}
+{"endereco_id" : "5", "cep" : "80950111", "logradouro" : "Avenida 25 de Março", "uf" : "SP", "cidade" : "Sao Paulo", "cliente" : "06325448747"}
+{"endereco_id" : "6", "cep" : "50879340", "logradouro" : "Avenida Dom Luis", "uf" : "CE", "cidade" : "Fortaleza", "cliente" : "12300023123"}
+{"endereco_id" : "7", "cep" : "60822723", "logradouro" : "Rua Jose Leon", "uf" : "CE", "cidade" : "Fortaleza", "cliente" : "06525447578"}

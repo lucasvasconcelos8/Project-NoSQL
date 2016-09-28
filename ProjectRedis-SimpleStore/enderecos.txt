@@ -1,0 +1,7 @@
+60822690,Rua Professor Martins de Aguiar,CE,Fortaleza,06325348346
+60567690,Rua Canuto de Aguiar,CE,Fortaleza,08213000123
+70822725,Rua Chico Lemos,CE,Fortaleza,18213012123
+60921350,Avenida Paulista,SP,Sao Paulo,02156321123
+80950111,Avenida 25 de Marco,SP,Sao Paulo,06325448747
+50879340,Avenida Dom Luis,CE,Fortaleza,12300023123
+60822723,Rua Jose Leon,CE,Fortaleza,06525447578

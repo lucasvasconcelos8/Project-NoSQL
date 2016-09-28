@@ -1,0 +1,7 @@
+{"cliente_id" : "1" ,"cpf" : "06325348346", "nome" :"Lucas Moreira de Vasconcelos", "telefones" : ["997010921","32794709"], "pedidos" :["1"]}
+{"cliente_id" : "2" ,"cpf" : "08213000123", "nome" :"Alexandre da Silva", "telefones" : ["998342034","32004412","32754808"], "pedidos" :["2","3","4"]}
+{"cliente_id" : "3" ,"cpf" : "18213012123", "nome" :"Luciana Almeida", "telefones" : ["982343212"], "pedidos" :["5"]}	 
+{"cliente_id" : "4" ,"cpf" : "02156321123", "nome" :"Bruno Braga", "telefones" : ["999695549","32794721","88290013"], "pedidos" :["6","7","8"]}
+{"cliente_id" : "5" ,"cpf" : "06325448747", "nome" :"Amanda Lima", "telefones" : ["999690000","40008000"], "pedidos" :[]}
+{"cliente_id" : "6" ,"cpf" : "12300023123", "nome" :"Leonardo Junior", "telefones" : ["991403544","32790012","88292213"], "pedidos" :["9","10"]}
+{"cliente_id" : "7" ,"cpf" : "06525447578", "nome" :"Bruna Mesquita", "telefones" : ["988567438"], "pedidos" :["11"]}

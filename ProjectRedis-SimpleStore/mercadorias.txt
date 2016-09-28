@@ -1,0 +1,3 @@
+001,Vaso,20
+002,Colchao inflavel,60
+003,Mesa,150
