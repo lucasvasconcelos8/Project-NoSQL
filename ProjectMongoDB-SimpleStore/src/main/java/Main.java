@@ -8,7 +8,6 @@ import com.mongodb.ServerAddress;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
-import org.w3c.dom.stylesheets.DocumentStyle;
 
 import java.util.*;
 
@@ -63,8 +62,7 @@ public class Main {
 
     }
 
-    private static void importJson(ArrayList<Document> listDocuments, MongoCollection collLoja) {
-        Scanner ler = new Scanner(System.in);
+    private static void importJson(ArrayList<Document> listDocuments, MongoCollection<Document> collLoja) {
         if(collLoja.count() == 0){
             System.out.println("Coleção Vazia, pode importar um arquivo");
             collLoja.insertMany(listDocuments);
@@ -77,7 +75,7 @@ public class Main {
         }
     }
 
-    private static void deleteAll(MongoCollection collLoja){
+    private static void deleteAll(MongoCollection<Document> collLoja){
         collLoja.drop();
     }
 
@@ -112,7 +110,8 @@ public class Main {
 
     }
 
-    private static void consultaObjetos(ArrayList<Document> listDocuments) {
+    @SuppressWarnings("unchecked")
+	private static void consultaObjetos(ArrayList<Document> listDocuments) {
 
 
         for(int i =0; i<listDocuments.size(); i++){
@@ -120,7 +119,8 @@ public class Main {
                 int cliente_id = Integer.parseInt(listDocuments.get(i).get("cliente_id").toString());
                 String cpf  = (String) listDocuments.get(i).get("cpf");
                 String nome = (String) listDocuments.get(i).get("nome");
-                ArrayList<Integer> telefones = (ArrayList<Integer>) listDocuments.get(i).get("telefones");
+                @SuppressWarnings("unchecked")
+				ArrayList<Integer> telefones = (ArrayList<Integer>) listDocuments.get(i).get("telefones");
                 ArrayList<Integer> pedidos = (ArrayList<Integer>) listDocuments.get(i).get("pedidos");
                 Cliente cliente = new Cliente(cliente_id,cpf,nome,telefones,pedidos);
 
@@ -187,27 +187,27 @@ public class Main {
             if (number == 1) {
                 System.out.println("->Os clientes são:");
                 for(int i=0 ; i < clientes.size() ; i++){
-                    System.out.println("-> "+clientes.get(i).nome+" - "+clientes.get(i).cpf);
+                    System.out.println("-> "+clientes.get(i).getNome()+" - "+clientes.get(i).getCpf());
                 }
             } else if (number == 2) {
                 System.out.println("->As mercadorias são:");
                 for(int i=0 ; i < mercadorias.size() ; i++){
-                    System.out.println("-> "+mercadorias.get(i).nome+" - "+mercadorias.get(i).preco);
+                    System.out.println("-> "+mercadorias.get(i).getNome()+" - "+mercadorias.get(i).getPreco());
                 }
             } else if (number == 3) {
                 System.out.println("->Os itens são:");
                 for(int i=0 ; i < itens.size() ; i++){
-                    System.out.println("-> "+itens.get(i).pedidoId+" - "+itens.get(i).quantidade);
+                    System.out.println("-> "+itens.get(i).getPedidoId()+" - "+itens.get(i).getQuantidade());
                 }
             } else if (number == 4) {
                 System.out.println("->Os pedidos são:");
                 for(int i=0 ; i < pedidos.size() ; i++){
-                    System.out.println("-> CPF:"+pedidos.get(i).cpf_cliente);
+                    System.out.println("-> CPF:"+pedidos.get(i).getCpf_cliente());
                 }
             } else if (number == 5) {
                 System.out.println("->Os endereços são:");
                 for(int i=0 ; i < enderecos.size() ; i++){
-                    System.out.println("-> "+enderecos.get(i).logradouro+" - "+enderecos.get(i).cidade+" - "+enderecos.get(i).uf);
+                    System.out.println("-> "+enderecos.get(i).getLogradouro()+" - "+enderecos.get(i).getCidade()+" - "+enderecos.get(i).getUf());
                 }
             }
         }

@@ -5,9 +5,9 @@ import java.util.ArrayList;
  */
 public class Cliente {
 
-    int cliente_id;
-    String cpf,nome;
-    ArrayList<Integer> telefones,pedidos;
+    private int cliente_id;
+    private String cpf,nome;
+    private ArrayList<Integer> telefones,pedidos;
 
     public Cliente(int cliente_id, String cpf, String nome, ArrayList<Integer> telefones, ArrayList<Integer> pedidos) {
 
@@ -17,4 +17,46 @@ public class Cliente {
         this.telefones = telefones;
         this.pedidos = pedidos;
     }
+
+	public int getCliente_id() {
+		return cliente_id;
+	}
+
+	public void setCliente_id(int cliente_id) {
+		this.cliente_id = cliente_id;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public ArrayList<Integer> getTelefones() {
+		return telefones;
+	}
+
+	public void setTelefones(ArrayList<Integer> telefones) {
+		this.telefones = telefones;
+	}
+
+	public ArrayList<Integer> getPedidos() {
+		return pedidos;
+	}
+
+	public void setPedidos(ArrayList<Integer> pedidos) {
+		this.pedidos = pedidos;
+	}
+    
+    
 }
