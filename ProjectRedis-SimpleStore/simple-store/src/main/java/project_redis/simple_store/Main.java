@@ -95,7 +95,38 @@ public class Main extends JFrame {
 		    	  deletarChavesFromRedis(jedis);
 		      }
 		      if(numero == 5){
-		    	  
+		  			store.receiveFromRedis();
+		  	  
+		    	  if(store.getClientes().size() == 0 && store.getEnderecos().size() == 0 && store.getPedidos().size() == 0 && store.getMercadorias().size() == 0 && store.getItens().size() == 0){
+		    		  System.out.println("O banco est� vazio");
+		    	  }
+		    	  else{
+		    		  System.out.println("Foi carregado dados do banco Redis");
+		    		  
+		    		  //Pick in controller all types in redis
+		    		  ArrayList<Cliente> clientes = store.getClientes();
+		    		  ArrayList<Pedido> pedidos = store.getPedidos();
+		    		  ArrayList<Mercadoria> mercadorias = store.getMercadorias();
+		    		  ArrayList<Item> itens = store.getItens();
+		    		  ArrayList<Endereco> enderecos = store.getEnderecos();
+		    		  
+		    		  //Show data with some relevants attributes
+		    		  for(int i = 0 ; i < clientes.size() ; i++){
+		    			  System.out.println("Nome: "+clientes.get(i).getNome()+ " , CPF: "+clientes.get(i).getCpf());
+		    		  }
+		    		  for(int i = 0 ; i < pedidos.size() ; i++){
+		    			  System.out.println("Nº Pedido: "+pedidos.get(i).getCodigo()+ " Data Pedido: "+pedidos.get(i).getData_pedido());
+		    		  }
+		    		  for(int i = 0 ; i < mercadorias.size() ; i++){
+		    			  System.out.println("Mercadoria: "+mercadorias.get(i).getNome()+ " Preço: "+mercadorias.get(i).getPreco());
+		    		  }
+		    		  for(int i = 0 ; i < itens.size() ; i++){
+		    			  System.out.println("Nº Item: "+itens.get(i).getNumero()+ " QtD: "+itens.get(i).getQuantidade());
+		    		  }
+		    		  for(int i = 0 ; i < enderecos.size() ; i++){
+		    			  System.out.println("Enderecos: "+enderecos.get(i).getCep()+ " Cidade: "+enderecos.get(i).getCidade());
+		    		  }
+		    	  }
 		      }
 		      if(numero == 6){
 		    	 System.out.println("Tchau!");
@@ -104,6 +135,7 @@ public class Main extends JFrame {
 	      
 	 }
 	
+
 	private static void deletarChavesFromRedis(Jedis jedis) {
 		// TODO Auto-generated method stub
 		int i=1;
