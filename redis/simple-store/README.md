@@ -2,11 +2,15 @@ Redis Simple Store
 =============
 
 Implementation of system "simple-store" using Redis.
+The Redis used in this implementation was redis-2.8.19 .
 
 This implementation has 3 main parts:
-	- [Jedis](https://github.com/xetorthio/jedis) , A client  in Java for Redis
-	- Simple-Store dataset
-	- Interface (Under Construction!)
+- [Jedis](https://github.com/xetorthio/jedis) , A client  in Java for Redis
+- Simple-Store dataset
+- Interface (Under Construction!)
+
+In the case, you don't familiar with Redis(yet!) and want a brief tutorial and explanation of database, read this [tutorial](https://docs.google.com/presentation/d/1QmUeLrLwDY_PS0CPkiqD1qpF8V8ct4Q1ZQQDoF43lzo/edit?usp=sharing) made for me!
+	
 
 ## Jedis
 
@@ -53,6 +57,25 @@ To help you quick understand the dataset, there is a description:
 				uf
 				cep
 				cliente
+
+The keys in database was represent with "loja<type>" for indicate what type you handle
+An example of how redis store this dataset is :
+
+	127.0.0.1:6379> keys *
+	 1) "loja:endereco4"
+	 2) "loja:endereco2"
+	 3) "loja:pedido7"
+	 4) "loja:cliente6"
+	 5) "loja:item11"
+	 6) "loja:mercadoria2"
+	 7) "loja:mercadoria1"
+	 8) "loja:pedido8"
+	 9) "loja:cliente5"
+	10) "loja:pedido3"
+	11) "loja:endereco5"
+	12) "loja:pedido9"
+
+the numbers is the way choosen to determine the key (You can use other ways)
 
 ## Interface
 
