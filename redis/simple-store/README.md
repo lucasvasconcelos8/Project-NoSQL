@@ -14,18 +14,18 @@ In the case, you don't familiar with Redis(yet!) and want a brief tutorial and e
 
 ## Jedis
 
-Jedis is a client in Java for Redis and it1s pretty simple with easy tutorial on github. Jedis also have maven dependency which brings facilities to project with.
+Jedis is a client in Java for Redis and it's pretty simple with easy tutorial on github. Jedis also have maven dependency which brings facilities to project with him.
 
 The inicialization of jedis is simple (with a single cluster in a localhost which is the case of this implementation):
 	
 	Jedis jedis = new Jedis("localhost");
 
-After that you go use this "jedis" instance to execute calls in database redis! Just this!
+After that, you go use this "jedis" instance to execute calls in database redis! Just this!
 
 ## Simple-Store dataset
 
 This implementation use a very simple dataset, because the purpose is to show a minnimum example using an application Java with Redis.
-To help you quick understand the dataset, there is a description:
+To help you understand the dataset, there is a description:
 
 	Chaves:
 		loja:cliente
@@ -58,7 +58,8 @@ To help you quick understand the dataset, there is a description:
 				cep
 				cliente
 
-The keys in database was represent with "loja<type>" for indicate what type you handle
+The keys in database was represent with "loja<type>" for indicate what type you handle and the structure choosen for keys is Hash Tables which is the best fit for the dataset.
+
 An example of how redis store this dataset is :
 
 	127.0.0.1:6379> keys *
